@@ -27,6 +27,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- link map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -223,55 +226,71 @@
         </div>
         <!-- Feature End-->
 
-<div style="width: 100%; background: #fff; overflow: hidden; position: relative; padding: 20px 0;">
-    <div class="partner-track" style="display: flex; align-items: center; width: max-content; animation: partnerScroll 20s linear infinite;">
+        <div style="width: 100%; background: #fff; overflow: hidden; position: relative; padding: 20px 0;">
+            <div class="partner-track"
+                style="display: flex; align-items: center; width: max-content; animation: partnerScroll 20s linear infinite;">
 
-        <!-- SET 1 -->
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia" style="max-height: 55px; width: auto; object-fit: contain;">
+                <!-- SET 1 -->
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/Moratelindo.jpg" alt="Moratelindo"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <!-- DUPLIKAT SET 1 supaya scroll mulus -->
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="img/logo/Moratelindo.jpg" alt="Moratelindo"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+            </div>
         </div>
 
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
+        <style>
+            @keyframes partnerScroll {
+                0% {
+                    transform: translateX(0);
+                }
 
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/Moratelindo.jpg" alt="Moratelindo" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-
-        <!-- DUPLIKAT SET 1 supaya scroll mulus -->
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-
-        <div style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-            <img src="img/logo/Moratelindo.jpg" alt="Moratelindo" style="max-height: 55px; width: auto; object-fit: contain;">
-        </div>
-    </div>
-</div>
-
-<style>
-@keyframes partnerScroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-</style>
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        </style>
 
         <!-- About Start -->
         <div class="about wow fadeInUp" data-wow-delay="0.1s">
@@ -483,35 +502,167 @@
         </div>
         <!-- Service End -->
 
-
-        <!-- Video Start -->
-        <div class="video wow fadeIn" data-wow-delay="0.1s">
+        <!-- map indonesia start -->
+        <section style="background: #0f0f0f; padding: 80px 0;">
             <div class="container">
-                <button type="button" class="btn-play" data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                    <span></span>
-                </button>
-            </div>
-        </div>
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h5 style="color: #ff7a00; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+                        Project Coverage
+                    </h5>
+                    <h2 style="color: #fff; font-size: 42px; font-weight: 700; margin: 0;">
+                        Our Nationwide Deployment Map
+                    </h2>
+                </div>
 
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                                allow="autoplay"></iframe>
+                <div
+                    style="background: #161616; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button class="filter-btn active" data-year="all">All</button>
+                            <button class="filter-btn" data-year="2026">2026</button>
+                            <button class="filter-btn" data-year="2025">2025</button>
+                            <button class="filter-btn" data-year="2024">2024</button>
                         </div>
+
+                        <div style="color: #fff; font-size: 16px;">
+                            Total Projects: <strong id="totalProjects">0</strong> City
+                        </div>
+                    </div>
+
+                    <div id="projectMap" style="width: 100%; height: 550px; border-radius: 16px; overflow: hidden;">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Video End -->
+
+            <style>
+                .filter-btn {
+                    background: #252525;
+                    color: #fff;
+                    border: 1px solid #333;
+                    padding: 10px 18px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 14px;
+                }
+
+                .filter-btn:hover,
+                .filter-btn.active {
+                    background: #ff7a00;
+                    border-color: #ff7a00;
+                    color: #fff;
+                }
+
+                .leaflet-popup-content-wrapper {
+                    border-radius: 12px;
+                }
+
+                .leaflet-popup-content {
+                    margin: 12px 14px;
+                    font-family: Arial, sans-serif;
+                }
+            </style>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+            <script>
+                const projects = [
+                    { nama: "Project Malang", kota: "Malang", lat: -7.9666, lng: 112.6326, color: "#ff6b6b" },
+                    { nama: "Project Nganjuk", kota: "Nganjuk", lat: -7.6051, lng: 111.9035, color: "#4ecdc4" },
+                    { nama: "Project Pemalang", kota: "Pemalang", lat: -6.8915, lng: 109.3826, color: "#ffd93d" },
+                    { nama: "Project Purwakarta", kota: "Purwakarta", lat: -6.5569, lng: 107.4438, color: "#5f27cd" },
+                    { nama: "Project Kudus", kota: "Kudus", lat: -6.8048, lng: 110.8405, color: "#1dd1a1" },
+                    { nama: "Project Jepara", kota: "Jepara", lat: -6.5933, lng: 110.6680, color: "#ff9f43" },
+                    { nama: "Project Pati", kota: "Pati", lat: -6.7487, lng: 111.0379, color: "#54a0ff" },
+                    { nama: "Project Sukabumi", kota: "Sukabumi", lat: -6.9277, lng: 106.9297, color: "#ee5253" },
+                    { nama: "Project Cianjur", kota: "Cianjur", lat: -6.8173, lng: 107.1427, color: "#10ac84" },
+                    { nama: "Project Bekasi", kota: "Bekasi", lat: -6.2383, lng: 106.9756, color: "#f368e0" },
+                    { nama: "Project Cikarang", kota: "Cikarang", lat: -6.2615, lng: 107.1522, color: "#00d2d3" },
+                    { nama: "Project Banjarnegara", kota: "Banjarnegara", lat: -7.4020, lng: 109.6810, color: "#ff9ff3" },
+                    { nama: "Project Temanggung", kota: "Temanggung", lat: -7.3167, lng: 110.1667, color: "#48dbfb" },
+                    { nama: "Project Wonosobo", kota: "Wonosobo", lat: -7.3630, lng: 109.9000, color: "#feca57" },
+                    { nama: "Project Kebumen", kota: "Kebumen", lat: -7.6689, lng: 109.6531, color: "#5f6caf" },
+                    { nama: "Project Probolinggo", kota: "Probolinggo", lat: -7.7543, lng: 113.2159, color: "#ff7f50" },
+                    { nama: "Project Jember", kota: "Jember", lat: -8.1724, lng: 113.7000, color: "#6a5acd" },
+                    { nama: "Project Sulawesi", kota: "Makassar", lat: -5.1477, lng: 119.4327, color: "#20c997" },
+                    { nama: "Project Kediri", kota: "Kediri", lat: -7.8480, lng: 112.0178, color: "#ff8fab" },
+                    { nama: "Project Madiun", kota: "Madiun", lat: -7.6298, lng: 111.5239, color: "#2ec4b6" },
+                    { nama: "Project Blitar", kota: "Blitar", lat: -8.0955, lng: 112.1608, color: "#ffb703" },
+                    { nama: "Project Cirebon", kota: "Cirebon", lat: -6.7063, lng: 108.5570, color: "#8d99ae" },
+                    { nama: "Project Kediri", kota: "Kediri", lat: -7.8480, lng: 112.0178, color: "#ff8fab" },
+                    { nama: "Project Madiun", kota: "Madiun", lat: -7.6298, lng: 111.5239, color: "#2ec4b6" },
+                    { nama: "Project Blitar", kota: "Blitar", lat: -8.0955, lng: 112.1608, color: "#ffb703" },
+                    { nama: "Project Cirebon", kota: "Cirebon", lat: -6.7063, lng: 108.5570, color: "#8d99ae" },
+                    { nama: "Project Subang", kota: "Subang", lat: -6.5719, lng: 107.7605, color: "#8338ec" },
+                    { nama: "Project Purwakarta", kota: "Purwakarta", lat: -6.5569, lng: 107.4438, color: "#fb5607" },
+                    { nama: "Project Jakarta Barat", kota: "Jakarta Barat", lat: -6.1683, lng: 106.7588, color: "#e63946" },
+                    { nama: "Project Bogor", kota: "Bogor", lat: -6.5950, lng: 106.8167, color: "#06d6a0" },
+                    { nama: "Project Karawang", kota: "Karawang", lat: -6.3054, lng: 107.2961, color: "#3a86ff" },
+                    { nama: "Project Indramayu", kota: "Indramayu", lat: -6.3265, lng: 108.3207, color: "#ff006e" },
+                    { nama: "Project Indramayu", kota: "Indramayu", lat: -6.3265, lng: 108.3207, color: "#ff006e" }
+                ];
+
+                // Inisialisasi map
+                const map = L.map('projectMap', {
+                    zoomControl: true,
+                    scrollWheelZoom: true
+                }).setView([-2.5, 118], 5);
+
+                // Dark tile
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                    attribution: ''
+                }).addTo(map);
+
+                let markersLayer = L.layerGroup().addTo(map);
+
+                function renderMarkers() {
+                    markersLayer.clearLayers();
+
+                    projects.forEach(project => {
+                        const marker = L.circleMarker([project.lat, project.lng], {
+                            radius: 9,
+                            color: "#ffffff",
+                            weight: 2,
+                            fillColor: project.color,
+                            fillOpacity: 1
+                        });
+
+                        marker.bindPopup(`
+                            <div style="min-width:200px;">
+                                <h4 style="margin:0 0 8px; font-size:16px; font-weight:700; color:#0f172a;">
+                                    ${project.nama}
+                                </h4>
+                                <p style="margin:0; font-size:14px;">
+                                    <strong>Kota:</strong> ${project.kota}
+                                </p>
+                            </div>
+                        `);
+
+                        marker.addTo(markersLayer);
+                    });
+
+                    document.getElementById('totalProjects').textContent = projects.length;
+                }
+
+                renderMarkers();
+
+                // Filter button
+                const buttons = document.querySelectorAll('.filter-btn');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+
+                        const year = this.getAttribute('data-year');
+                        renderMarkers(year);
+                    });
+                });
+            </script>
+        </section>
+        <!-- map indonesia end -->
+
 
 
         <!-- Team Start -->
@@ -594,328 +745,6 @@
             </div>
         </div>
         <!-- Team End -->
-
-
-        <!-- FAQs Start -->
-        <div class="faqs">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Frequently Asked Question</p>
-                    <h2>You May Ask</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="accordion-1">
-                            <div class="card wow fadeInLeft" data-wow-delay="0.1s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="collapse" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInLeft" data-wow-delay="0.2s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInLeft" data-wow-delay="0.3s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInLeft" data-wow-delay="0.4s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="collapse" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="accordion-2">
-                            <div class="card wow fadeInRight" data-wow-delay="0.1s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseSix" class="collapse" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInRight" data-wow-delay="0.2s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseEight" class="collapse" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInRight" data-wow-delay="0.4s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseNine" class="collapse" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInRight" data-wow-delay="0.5s">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                        Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseTen" class="collapse" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
-                                        mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FAQs End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-slider-nav">
-                            <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-slider">
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                    Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id
-                                    gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
-                                    maximus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Blog Start -->
-        <div class="blog">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Latest Blog</p>
-                    <h2>Latest From Our Blog</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Image">
-                            </div>
-                            <div class="blog-title">
-                                <h3>Lorem ipsum dolor sit</h3>
-                                <a class="btn" href="">+</a>
-                            </div>
-                            <div class="blog-meta">
-                                <p>By<a href="">Admin</a></p>
-                                <p>In<a href="">Construction</a></p>
-                            </div>
-                            <div class="blog-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                    ornare velit non vulputate. Aliquam metus tortor
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Image">
-                            </div>
-                            <div class="blog-title">
-                                <h3>Lorem ipsum dolor sit</h3>
-                                <a class="btn" href="">+</a>
-                            </div>
-                            <div class="blog-meta">
-                                <p>By<a href="">Admin</a></p>
-                                <p>In<a href="">Construction</a></p>
-                            </div>
-                            <div class="blog-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                    ornare velit non vulputate. Aliquam metus tortor
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.jpg" alt="Image">
-                            </div>
-                            <div class="blog-title">
-                                <h3>Lorem ipsum dolor sit</h3>
-                                <a class="btn" href="">+</a>
-                            </div>
-                            <div class="blog-meta">
-                                <p>By<a href="">Admin</a></p>
-                                <p>In<a href="">Construction</a></p>
-                            </div>
-                            <div class="blog-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                    ornare velit non vulputate. Aliquam metus tortor
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
 
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
